@@ -10,15 +10,14 @@
 
 const maxSequence = function (arr) {
   if (arr.length === 0) return 0;
+  let maxSum = arr[0];
+  let curSum = 0;
 
-  let maxSum = 0;
-  let curSum;
   for (let i = 0; i < arr.length; i++) {
-    curSum = 0;
-    for (let j = i; j < arr.length; j++) {
-      curSum += arr[j];
-      curSum > maxSum ? (maxSum = curSum) : maxSum;
-    }
+    if (curSum < 0) curSum = 0;
+    curSum += arr[i];
+    maxSum = Math.max(maxSum, curSum);
   }
-  return maxSum;
+
+  return maxSum < 0 ? 0 : maxSum;
 };
