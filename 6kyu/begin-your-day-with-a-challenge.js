@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/5873b2010565844b9100026d
+
 // There are no explanations. You have to create the code that gives the following results in Python, Ruby, and Haskell:
 
 // one_two_three(0) == [0, 0]
