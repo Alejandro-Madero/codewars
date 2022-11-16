@@ -30,24 +30,12 @@
 // N.B. You should assume that all the test input will be valid, as specified above.
 
 const queueTime = function (customers, n) {
-  let subArr = customers.splice(0, n);
-  let time = 0;
+  const tills = Array.from({ length: n }, () => 0);
+  customers.forEach((c) => {
+    const minTill = Math.min(...tills);
+    const minTillIdx = tills.indexOf(minTill);
+    tills[minTillIdx] += c;
+  });
 
-  while (subArr.length > 0) {
-    if (subArr.length !== n) {
-      subArr = [...subArr, ...customers.splice(0, n - subArr.length)];
-    }
-    subArr = decreaseEl(subArr);
-    if (subArr.length === 0)
-      subArr = [...subArr, ...customers.splice(0, n - subArr.length)];
-    time++;
-  }
-  return time;
-};
-
-const decreaseEl = function (arr) {
-  return arr.reduce((acc, el) => {
-    if (el - 1 === 0) return acc;
-    return [...acc, (el -= 1)];
-  }, []);
+  return Math.max(...tills);
 };
