@@ -16,9 +16,9 @@ rgb(255, 255, 300) // returns FFFFFF
 rgb(0,0,0) // returns 000000
 rgb(148, 0, 211) // returns 9400D3
 
-SOLUTION:
-
 */
+
+// SOLUTION:
 
 const rgb = function (r, g, b) {
   const hex = [r, g, b]

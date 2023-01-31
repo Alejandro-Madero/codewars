@@ -15,9 +15,9 @@ Examples
 Constraints
 0 <= input.length <= 100
 
-SOLUTION:
-
 */
+
+// SOLUTION:
 
 const validParentheses = function (parens) {
   const cache = [];

@@ -13,9 +13,9 @@ Easy case is when the list is made up of only positive numbers and the maximum s
 
 Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
 
-SOLUTION:
-
 */
+
+// SOLUTION:
 
 const maxSequence = function (arr) {
   if (arr.length === 0) return 0;

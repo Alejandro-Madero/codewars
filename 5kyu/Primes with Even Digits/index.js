@@ -25,9 +25,9 @@ Features of the random tests:
 Number of tests = 28
 1000 <= n <= 5000000
 
-SOLUTION:
-
 */
+
+// SOLUTION:
 
 function f(n) {
   const maxPrime = [[0, 0]];

@@ -19,9 +19,10 @@ Examples
 "    Hello     World   "                  =>  "#HelloWorld"
 ""                                        =>  false
 
-SOLUTION:
-
 */
+
+// SOLUTION:
+
 const generateHashtag = function (str) {
   if (!str) return false;
 

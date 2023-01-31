@@ -13,9 +13,9 @@ At least one character ("" is not valid)
 Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
 No whitespaces / underscore
 
-SOLUTION:
-
 */
+
+// SOLUTION:
 
 const alphanumeric = (string) =>
   !string ? false : !/[^a-z0-9]/gi.test(string);

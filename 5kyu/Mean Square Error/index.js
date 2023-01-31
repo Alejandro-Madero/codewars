@@ -16,9 +16,9 @@ Examples
 [10, 20, 10, 2], [10, 25, 5, -2]  -->  16.5 because (0 + 25 + 25 + 16) / 4
 [-1, 0], [0, -1]                  -->   1   because (1 + 1) / 2
 
-SOLUTION:
-
 */
+
+//SOLUTION:
 
 const solution = function (firstArray, secondArray) {
   const thirdArr = firstArray.reduce((acc, el, i) => {

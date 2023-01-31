@@ -24,9 +24,9 @@ helper.pageIndex(2); //should == 0
 helper.pageIndex(20); //should == -1
 helper.pageIndex(-10); //should == -1
 
- SOLUTION:
+*/
 
- */
+// SOLUTION:
 
 class PaginationHelper {
   constructor(collection, itemsPerPage) {

@@ -26,10 +26,9 @@ All numbers in the list are positive numbers and the list can be empty.
 Notes
 it may happen that the input string have leading, trailing whitespaces and more than a unique whitespace between two consecutive numbers
 For C: The result is freed.
-
-SOLUTION:
-
 */
+
+// SOLUTION:
 
 const orderWeight = function (strng) {
   const strngWeights = strng.split(" ");

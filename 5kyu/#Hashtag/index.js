@@ -13,9 +13,10 @@ Pound signs alone do not count, for example: the string "#" would return an empt
 
 Output: Array of strings that were prefixed with the hashtag, but do not contain the hashtag.
  
-SOLUTION:
-
 */
+
+// SOLUTION:
+
 const isValidHash = function (word) {
   let parsedWord = word.slice(1);
   while (parsedWord[0] === "#") {
