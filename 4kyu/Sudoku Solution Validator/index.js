@@ -1,3 +1,10 @@
+/*
+
+LINK:
+https://www.codewars.com/kata/529bf0e9bdf7657179000008
+
+DESCRIPTION: 
+
 // Sudoku Background
 // Sudoku is a game played on a 9x9 grid. The goal of the game is to fill all cells of the grid with digits from 1 to 9, so that each column, each row, and each of the nine 3x3 sub-grids (also known as blocks) contain all of the digits from 1 to 9.
 // (More info at: http://en.wikipedia.org/wiki/Sudoku)
@@ -30,6 +37,10 @@
 //   [2, 8, 7, 4, 1, 9, 6, 3, 5],
 //   [3, 0, 0, 4, 8, 1, 1, 7, 9]
 // ]); // => false
+
+*/
+
+// SOLUTION:
 
 const validSolution = function (board) {
   const columns = Array.from({ length: 9 }, () => []);

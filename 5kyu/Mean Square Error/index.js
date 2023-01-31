@@ -18,7 +18,7 @@ Examples
 
 */
 
-//SOLUTION:
+// SOLUTION:
 
 const solution = function (firstArray, secondArray) {
   const thirdArr = firstArray.reduce((acc, el, i) => {
