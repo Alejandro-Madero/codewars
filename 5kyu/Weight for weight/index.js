@@ -22,6 +22,8 @@
 // it may happen that the input string have leading, trailing whitespaces and more than a unique whitespace between two consecutive numbers
 // For C: The result is freed.
 
+// SOLUTION:
+
 const orderWeight = function (strng) {
   const strngWeights = strng.split(" ");
 

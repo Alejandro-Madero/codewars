@@ -15,6 +15,8 @@
 // The Task
 // Given a string, you must decide whether or not it contains a valid phone number. If it does, return the corrected phone number as a string ie. '02078834982' with no whitespace or special characters, else return "Not a phone number".
 
+// SOLUTION:
+
 const isItANum = function (str) {
   const parsed = str.replaceAll(/[^0-9]/g, "");
   return parsed[0] === "0" && parsed.length === 11

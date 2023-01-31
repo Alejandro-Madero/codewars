@@ -10,6 +10,8 @@
 // Constraints
 // 0 <= input.length <= 100
 
+// SOLUTION:
+
 const validParentheses = function (parens) {
   const cache = [];
   const closing = new Map([[")", "("]]);

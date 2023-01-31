@@ -14,6 +14,8 @@
 // "    Hello     World   "                  =>  "#HelloWorld"
 // ""                                        =>  false
 
+// SOLUTION:
+
 const generateHashtag = function (str) {
   if (!str) return false;
 

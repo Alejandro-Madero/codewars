@@ -8,6 +8,8 @@
 
 // Empty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.
 
+// SOLUTION:
+
 const maxSequence = function (arr) {
   if (arr.length === 0) return 0;
   let maxSum = arr[0];

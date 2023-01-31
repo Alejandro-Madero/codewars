@@ -9,6 +9,8 @@
 // The distance that the snail slides down during the night (meters)
 // Calculate number of day when the snail will reach the top of the column.
 
+// SOLUTION:
+
 const snail = function (column, day, night) {
   if (column - day <= 0) return 1;
   return 1 + snail(column - (day - night), day, night);

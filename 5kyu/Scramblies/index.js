@@ -11,6 +11,8 @@
 // scramble('cedewaraaossoqqyt', 'codewars') ==> True
 // scramble('katas', 'steak') ==> False
 
+// SOLUTION:
+
 const scramble = function (str1, str2) {
   if (str1.length < str2.length) return false;
 
