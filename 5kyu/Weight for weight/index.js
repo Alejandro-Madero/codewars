@@ -1,4 +1,8 @@
+// LINK:
+
 // https://www.codewars.com/kata/55c6126177c9441a570000cc/javascript
+
+// DESCRIPTION:
 
 // My friend John and I are members of the "Fat to Fit Club (FFC)". John is worried because each month a list with the weights of members is published and each month he is the last on the list which means he is the heaviest.
 

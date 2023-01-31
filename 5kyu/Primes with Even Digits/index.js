@@ -1,4 +1,8 @@
+// LINK:
+
 // https://www.codewars.com/kata/582dcda401f9ccb4f0000025
+
+// DESCRIPTION:
 
 // Find the closest prime number under a certain integer n that has the maximum possible amount of even digits.
 

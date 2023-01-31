@@ -1,4 +1,8 @@
+// LINK:
+
 // https://www.codewars.com/kata/52ae2db783f47875d0000064/javascript
+
+// DESCRIPTION:
 
 // You start working for a fancy new startup hoping to revolutionize social networking! GASP! They had this great idea that users should be able to specify relevant keywords to their posts using an ingenious idea by prefixing those keywords with the pound sign (#). Your job is to extract those keywords so that they can be used later on for whatever purposes.
 
