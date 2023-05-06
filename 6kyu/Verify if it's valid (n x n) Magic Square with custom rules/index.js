@@ -76,7 +76,7 @@ square = [
 const isValid = function (square, gap) {
   const cols = Array.from({ length: square.length }, () => []);
   const diags = Array.from({ length: 2 }, () => []);
-  const allValues = square.flatMap((row) => row);
+  const allValues = square.flat();
   const uniqueValues = new Set(allValues);
   let magicSum = null;
 
