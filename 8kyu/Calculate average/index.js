@@ -15,3 +15,5 @@ Note: Empty arrays should return 0.
 
 const findAverage = (arr) =>
   arr.reduce((acc, el) => acc + el, 0) / arr.length || 0;
+
+module.exports = findAverage;

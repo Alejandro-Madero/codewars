@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "Este repositorio es una colección de soluciones a problemas algorítmicos de Codewars. Estos problemas me ayudaron a mejorar mis habilidades en la programación y quiero compartirlas con otros interesados en hacer lo mismo. Cada solución incluye el enlace al problema original y el código con mi solución. Los problemas están separados en carpetas siendo 8kyu los más sencillos y 1kyu los más desafiantes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandro-Madero/codewars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejandro-Madero/codewars/issues"
+  },
+  "homepage": "https://github.com/Alejandro-Madero/codewars#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

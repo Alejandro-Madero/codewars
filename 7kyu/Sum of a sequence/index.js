@@ -23,10 +23,11 @@ Examples
 // SOLUTION:
 
 const sequenceSum = function (begin, end, step) {
-  if (begin > end) return 0;
-  let sum = begin;
-  for (let i = begin + step; i <= end; i += step) {
-    sum = sum + i;
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) {
+    sum += i;
   }
   return sum;
 };
+
+module.exports = sequenceSum;
