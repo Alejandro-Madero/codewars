@@ -17,9 +17,10 @@ const findMultiples = function (integer, limit) {
   const multiples = [];
 
   for (let i = integer; i <= limit; i++) {
-    console.log(i, integer);
     if (i % integer === 0) multiples.push(i);
   }
 
   return multiples;
 };
+
+module.exports = findMultiples;
