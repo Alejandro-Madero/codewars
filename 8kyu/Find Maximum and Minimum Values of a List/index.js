@@ -22,3 +22,5 @@ You may consider that there will not be any empty arrays/vectors.
 
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
+
+module.exports = { min, max };
