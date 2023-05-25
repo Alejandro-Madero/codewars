@@ -20,3 +20,5 @@ If one of the arguments is a number your code must coerce it into being a string
 // SOLUTION:
 
 const joinStrings = (string1, string2) => `${string1} ${string2}`;
+
+module.exports = joinStrings;
