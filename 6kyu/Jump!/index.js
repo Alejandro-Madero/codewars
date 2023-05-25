@@ -53,23 +53,21 @@ const canJump = function (arr) {
 
     if (possibleSquares.length < jump) return true;
 
-    const maxNetJump = possibleSquares
-      .map((el) => (el === 0 ? null : el))
-      .reduce(
-        (acc, cur, idx) => {
-          if (cur === null) return acc;
-          const currentJump = cur - possibleSquares.length + idx + 1;
-          const actualIndex = idx + i + 1;
-          const isLastSquare = actualIndex === arr.length - 1;
+    const maxNetJump = possibleSquares.reduce(
+      (acc, cur, idx) => {
+        if (cur === 0) return acc;
+        const currentJump = cur - possibleSquares.length + idx + 1;
+        const actualIndex = idx + i + 1;
+        const isLastSquare = actualIndex === arr.length - 1;
 
-          if (isLastSquare) return acc;
-          if (currentJump > acc.netJump) {
-            return { netJump: currentJump, index: actualIndex };
-          }
-          return acc;
-        },
-        { netJump: 0, index: 0 }
-      );
+        if (isLastSquare) return acc;
+        if (currentJump > acc.netJump) {
+          return { netJump: currentJump, index: actualIndex };
+        }
+        return acc;
+      },
+      { netJump: 0, index: 0 }
+    );
 
     if (maxNetJump.index === i) return false;
     i = maxNetJump.index;
