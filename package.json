@@ -1,7 +1,12 @@
 {
-  "name": "",
+  "license": "MIT",
+  "name": "Codewars",
   "version": "1.0.0",
   "description": "Este repositorio es una colección de soluciones a problemas algorítmicos de Codewars. Estos problemas me ayudaron a mejorar mis habilidades en la programación y quiero compartirlas con otros interesados en hacer lo mismo. Cada solución incluye el enlace al problema original y el código con mi solución. Los problemas están separados en carpetas siendo 8kyu los más sencillos y 1kyu los más desafiantes.",
+  "author": {
+    "name": "Alejandro Madero",
+    "email": "madero.ale@gmail.com"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest"

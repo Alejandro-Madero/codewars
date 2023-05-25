@@ -32,3 +32,5 @@ const validateHello = function (greetings) {
   const regex = /hello|ciao|salut|hallo|hola|ahoj|czesc/gi;
   return regex.test(greetings);
 };
+
+module.exports = validateHello;
