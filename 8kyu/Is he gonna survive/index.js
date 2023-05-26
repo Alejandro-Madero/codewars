@@ -15,3 +15,5 @@ Return true if yes, false otherwise :)
 // SOLUTION:
 
 const hero = (bullets, dragons) => bullets / dragons >= 2;
+
+module.exports = hero;
