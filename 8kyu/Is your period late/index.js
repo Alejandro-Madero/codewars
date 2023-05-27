@@ -30,3 +30,5 @@ const periodIsLate = function (last, today, cycleLength) {
 const periodIsLate = function (last, today, cycleLength) {
   return (today - last) / 86_400_000 > cycleLength;
 };
+
+module.exports = periodIsLate;
