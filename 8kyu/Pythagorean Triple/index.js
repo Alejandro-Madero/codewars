@@ -26,7 +26,8 @@ For JavaScript: return true or false
 
 const isPythagoreanTriple = function (integers) {
   const c = Math.max(...integers);
-  integers.splice(integers.indexOf(c), 1);
-  const [a, b] = integers;
+  const [a, b] = integers.filter((n) => n !== c);
   return c ** 2 === a ** 2 + b ** 2;
 };
+
+module.exports = isPythagoreanTriple;
