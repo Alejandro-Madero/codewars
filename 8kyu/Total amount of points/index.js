@@ -36,3 +36,5 @@ const points = function (games) {
     return acc + 1;
   }, 0);
 };
+
+module.exports = points;
