@@ -27,3 +27,5 @@ The second string argument will always be of length 1
 
 const strCount = (str, letter) =>
   str.length - str.split(letter).join("").length;
+
+module.exports = strCount;
