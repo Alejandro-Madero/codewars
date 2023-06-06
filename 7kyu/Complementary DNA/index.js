@@ -29,3 +29,5 @@ const DNAStrand = function (dna) {
     .map((el) => pairs[el])
     .join("");
 };
+
+module.exports = DNAStrand;
