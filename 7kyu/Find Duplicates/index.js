@@ -26,3 +26,5 @@ const duplicates = function (arr) {
   }
   return keysArr;
 };
+
+module.exports = duplicates;
