@@ -29,3 +29,5 @@ const removeSmallest = function (numbers) {
   arr.splice(arr.indexOf(Math.min(...numbers)), 1);
   return arr;
 };
+
+module.exports = removeSmallest;
