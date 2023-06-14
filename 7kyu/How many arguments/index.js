@@ -13,3 +13,5 @@ args_count(1, 2, 3, 10) -> 4
 // SOLUTION:
 
 const args_count = (...args) => args.length;
+
+module.exports = args_count;
