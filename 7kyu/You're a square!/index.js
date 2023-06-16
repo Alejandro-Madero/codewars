@@ -38,3 +38,5 @@ const isSquare = (n) => {
   if (n < 0) return false;
   return String(Math.sqrt(n)).match(/[.]/g) ? false : true;
 };
+
+module.exports = isSquare;
