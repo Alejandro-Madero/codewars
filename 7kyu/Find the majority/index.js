@@ -30,3 +30,5 @@ const majority = function (arr) {
 
   return res.length > 1 || res.length === 0 ? null : res[0][0];
 };
+
+module.exports = majority;
