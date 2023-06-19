@@ -16,6 +16,8 @@ Write a function reverse which reverses a list (or in clojure's case, any list-l
 const reverse = function (array) {
   return Array.from(
     { length: array.length },
-    (el, i) => array[array.length - i - 1]
+    (_, i) => array[array.length - i - 1]
   );
 };
+
+module.exports = reverse;
