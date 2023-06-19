@@ -30,3 +30,5 @@ const isItANum = function (str) {
     ? parsed
     : "Not a phone number";
 };
+
+module.exports = isItANum;
