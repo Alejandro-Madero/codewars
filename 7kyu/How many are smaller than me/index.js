@@ -26,3 +26,5 @@ const smaller = function (nums) {
   }
   return res;
 };
+
+module.exports = smaller;
