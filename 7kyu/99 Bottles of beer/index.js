@@ -62,7 +62,6 @@ const sing = function () {
     const bottles = ["No more bottles", "bottle", "bottles"];
     const bottle = bottles[i] ?? "bottles";
     const minusOne = bottles[i - 1] ?? "bottles";
-    console.log(minusOne, i);
     if (i === 0)
       return [
         `${bottle} ${firstLine[0]} ${bottle.toLowerCase()} ${firstLine[1]}`,
@@ -78,3 +77,5 @@ const sing = function () {
     .reverse()
     .flat();
 };
+
+sing();
