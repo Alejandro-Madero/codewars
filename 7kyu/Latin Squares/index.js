@@ -35,3 +35,5 @@ const makeLatinSquare = function (n) {
   });
   return [firstRow, ...aver];
 };
+
+module.exports = makeLatinSquare;

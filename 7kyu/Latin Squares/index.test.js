@@ -1,0 +1,1 @@
+const makeLatinSquare = require(".");
