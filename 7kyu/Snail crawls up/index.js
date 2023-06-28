@@ -21,3 +21,5 @@ const snail = function (column, day, night) {
   if (column - day <= 0) return 1;
   return 1 + snail(column - (day - night), day, night);
 };
+
+module.exports = snail;
