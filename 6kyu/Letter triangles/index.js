@@ -65,7 +65,7 @@ random tests contains strings up to 30 chars
 const triangle = function (row) {
   if (row.length < 2) return row;
 
-  let str = "";
+  let str = '';
 
   for (let i = 0; i < row.length - 1; i++) {
     const curIdx = row[i].charCodeAt(0);

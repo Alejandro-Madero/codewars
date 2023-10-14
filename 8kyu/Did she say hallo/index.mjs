@@ -28,9 +28,7 @@ function should be case insensitive to pass the tests
 
 // SOLUTION:
 
-const validateHello = function (greetings) {
+export const validateHello = function (greetings) {
   const regex = /hello|ciao|salut|hallo|hola|ahoj|czesc/gi;
   return regex.test(greetings);
 };
-
-module.exports = validateHello;

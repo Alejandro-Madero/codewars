@@ -21,7 +21,7 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 //SOLUTION:
 
 const cakes = function (recipe, available) {
-  const posibleCakes = Object.entries(recipe).map((el) => {
+  const posibleCakes = Object.entries(recipe).map(el => {
     return Math.floor((available[el[0]] ?? 0) / el[1]);
   });
 

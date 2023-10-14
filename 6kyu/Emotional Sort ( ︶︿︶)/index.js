@@ -43,11 +43,11 @@ const sortEmotions = function (arr, order) {
   if (arr.length === 0) return arr;
 
   const emotions = new Map([
-    ["T_T", 0],
-    [":(", 1],
-    [":|", 2],
-    [":)", 3],
-    [":D", 4],
+    ['T_T', 0],
+    [':(', 1],
+    [':|', 2],
+    [':)', 3],
+    [':D', 4],
   ]);
 
   const sortedArr = arr

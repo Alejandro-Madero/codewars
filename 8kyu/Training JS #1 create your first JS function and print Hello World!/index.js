@@ -48,7 +48,7 @@ In the end, click "Submit" to submit your code pass this kata.
 // SOLUTION:
 
 const helloWorld = () => {
-  const str = "Hello World!";
+  const str = 'Hello World!';
   console.log(str);
 };
 

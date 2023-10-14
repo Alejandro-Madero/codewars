@@ -19,10 +19,10 @@ NOTE: All numbers will be whole numbers greater than 0.
 
 const expandedForm = function (num) {
   return String(num)
-    .split("")
+    .split('')
     .reduce((acc, el, i, n) => {
-      if (el !== "0") return [...acc, `${el}${"0".repeat(n.length - i - 1)}`];
+      if (el !== '0') return [...acc, `${el}${'0'.repeat(n.length - i - 1)}`];
       return acc;
     }, [])
-    .join(" + ");
+    .join(' + ');
 };

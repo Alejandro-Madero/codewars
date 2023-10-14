@@ -26,6 +26,6 @@ The second string argument will always be of length 1
 // SOLUTION:
 
 const strCount = (str, letter) =>
-  str.length - str.split(letter).join("").length;
+  str.length - str.split(letter).join('').length;
 
 module.exports = strCount;

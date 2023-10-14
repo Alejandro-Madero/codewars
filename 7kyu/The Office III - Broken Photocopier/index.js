@@ -16,10 +16,10 @@ Given a string of binary, return the version the photocopier gives you as a stri
 // SOLUTION:
 
 const broken = function (x) {
-  let output = "";
+  let output = '';
 
   for (const char of x) {
-    output += char === "1" ? "0" : "1";
+    output += char === '1' ? '0' : '1';
   }
   return output;
 };

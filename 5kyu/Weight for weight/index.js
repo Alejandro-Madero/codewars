@@ -31,17 +31,17 @@ For C: The result is freed.
 // SOLUTION:
 
 const orderWeight = function (strng) {
-  const strngWeights = strng.split(" ");
+  const strngWeights = strng.split(' ');
 
   const arr = strngWeights
-    .map((el) => {
-      return [el, el.split("").reduce((acc, el) => acc + +el, 0)];
+    .map(el => {
+      return [el, el.split('').reduce((acc, el) => acc + +el, 0)];
     })
     .sort((a, b) => {
       if (a[1] !== b[1]) return a[1] - b[1];
       else return a[0].localeCompare(b[0]);
     })
-    .map((el) => el[0]);
+    .map(el => el[0]);
 
-  return arr.join(" ");
+  return arr.join(' ');
 };

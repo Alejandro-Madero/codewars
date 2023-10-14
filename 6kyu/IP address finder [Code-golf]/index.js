@@ -28,7 +28,7 @@ require is forbidden
 
 // SOLUTION:
 
-const f = (i) =>
+const f = i =>
   [1, 2, 3, 4].map(
-    (c) => (c * [...i].reduce((a, c) => a + c.charCodeAt(), 0)) % 256
+    c => (c * [...i].reduce((a, c) => a + c.charCodeAt(), 0)) % 256
   );

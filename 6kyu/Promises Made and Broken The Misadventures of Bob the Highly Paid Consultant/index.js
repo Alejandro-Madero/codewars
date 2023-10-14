@@ -27,7 +27,7 @@ As you may have gathered, the purpose of this Kata is to familiarize yourself wi
 
 // SOLUTION:
 
-const submitOrder = async (user) => {
+const submitOrder = async user => {
   const shoppingCart = await OrderAPI.getShoppingCartAsync(user);
 
   const { zipCode } = await CustomerAPI.getProfileAsync(user);
@@ -41,6 +41,6 @@ const submitOrder = async (user) => {
   );
 
   console.log(
-    `Your order ${orderSuccessful ? "was" : "was NOT"} placed successfully`
+    `Your order ${orderSuccessful ? 'was' : 'was NOT'} placed successfully`
   );
 };

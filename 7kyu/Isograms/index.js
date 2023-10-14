@@ -19,6 +19,6 @@ isIsogram "aba" = false
 
 // SOLUTION:
 
-const isIsogram = (str) => new Set(str.toLowerCase()).size === str.length;
+const isIsogram = str => new Set(str.toLowerCase()).size === str.length;
 
 module.exports = isIsogram;

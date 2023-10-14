@@ -1,1 +1,1 @@
-const isIsogram = require(".");
+const isIsogram = require('.');

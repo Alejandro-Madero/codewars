@@ -17,5 +17,5 @@ If all rooms are busy, return "None available!"
 
 // SOLUTION:
 
-const meeting = (x) =>
-  x.indexOf("O") !== -1 ? x.indexOf("O") : "None available!";
+const meeting = x =>
+  x.indexOf('O') !== -1 ? x.indexOf('O') : 'None available!';

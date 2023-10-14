@@ -24,32 +24,32 @@ May the binary force be with you!.
 
 // SOLUTION:
 
-const vm = function (initialVersion = "0.0.1") {
-  const ver = initialVersion ? initialVersion : "0.0.1";
-  let versionParsed = ver.split(".").slice(0, 3);
+const vm = function (initialVersion = '0.0.1') {
+  const ver = initialVersion ? initialVersion : '0.0.1';
+  let versionParsed = ver.split('.').slice(0, 3);
   if (versionParsed.length < 3) {
     for (let i = 0; i < 3; i++) {
-      versionParsed[i] = versionParsed[i] ?? "0";
+      versionParsed[i] = versionParsed[i] ?? '0';
     }
   }
-  versionParsed = versionParsed.join(".");
+  versionParsed = versionParsed.join('.');
 
   const isValidVersion = function (version) {
     return version
-      .split(".")
-      .map((val) => (val.match(/[0-9]/g) ? true : false))
-      .every((val) => val === true);
+      .split('.')
+      .map(val => (val.match(/[0-9]/g) ? true : false))
+      .every(val => val === true);
   };
 
   if (!isValidVersion(versionParsed))
-    throw new Error("Error occured while parsing version!");
+    throw new Error('Error occured while parsing version!');
 
   return {
-    version: versionParsed.split(".").slice(0, 3).join("."),
+    version: versionParsed.split('.').slice(0, 3).join('.'),
     previousVersions: [],
-    maj: +versionParsed.split(".")[0],
-    min: +versionParsed.split(".")[1],
-    pat: +versionParsed.split(".")[2],
+    maj: +versionParsed.split('.')[0],
+    min: +versionParsed.split('.')[1],
+    pat: +versionParsed.split('.')[2],
 
     major() {
       this.maj += 1;
@@ -75,11 +75,11 @@ const vm = function (initialVersion = "0.0.1") {
     },
     rollback() {
       if (this.previousVersions.length === 0)
-        throw new Error("Cannot rollback!");
+        throw new Error('Cannot rollback!');
       this.version = this.previousVersions.pop();
-      this.maj = +this.version.split(".")[0];
-      this.min = +this.version.split(".")[1];
-      this.pat = +this.version.split(".")[2];
+      this.maj = +this.version.split('.')[0];
+      this.min = +this.version.split('.')[1];
+      this.pat = +this.version.split('.')[2];
       return this;
     },
 

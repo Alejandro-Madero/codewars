@@ -19,15 +19,15 @@ Output: Array of strings that were prefixed with the hashtag, but do not contain
 
 const isValidHash = function (word) {
   let parsedWord = word.slice(1);
-  while (parsedWord[0] === "#") {
+  while (parsedWord[0] === '#') {
     parsedWord = parsedWord.slice(1);
   }
-  if (parsedWord.includes("#") || !/[a-z]/i.test(parsedWord[0])) return false;
+  if (parsedWord.includes('#') || !/[a-z]/i.test(parsedWord[0])) return false;
   return parsedWord;
 };
 
 const getHashtags = function (post) {
-  const arr = post.split(" ").reduce((acc, el) => {
+  const arr = post.split(' ').reduce((acc, el) => {
     if (!/[#]/.test(el[0])) return acc;
     const isValid = isValidHash(el);
     return isValid ? [...acc, isValid] : acc;

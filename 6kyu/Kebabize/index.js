@@ -19,7 +19,7 @@ the returned string should only contain lowercase letters
 // SOLUTION:
 
 const kebabize = function (str) {
-  let kebabCase = "";
+  let kebabCase = '';
   let funcName = str;
 
   for (let i = 0; i < funcName.length; i++) {

@@ -37,8 +37,8 @@ I'd advise you to find an efficient way for grouping the words in anagrams other
 const groupAnagrams = function (strs) {
   const anagrams = {};
 
-  strs.forEach((str) => {
-    const sorted = str.split("").sort().join("");
+  strs.forEach(str => {
+    const sorted = str.split('').sort().join('');
     !anagrams[sorted] ? (anagrams[sorted] = [str]) : anagrams[sorted].push(str);
   });
 

@@ -25,10 +25,10 @@ Given a string, you must decide whether or not it contains a valid phone number.
 // SOLUTION:
 
 const isItANum = function (str) {
-  const parsed = str.replaceAll(/[^0-9]/g, "");
-  return parsed[0] === "0" && parsed.length === 11
+  const parsed = str.replaceAll(/[^0-9]/g, '');
+  return parsed[0] === '0' && parsed.length === 11
     ? parsed
-    : "Not a phone number";
+    : 'Not a phone number';
 };
 
 module.exports = isItANum;

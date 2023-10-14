@@ -19,18 +19,18 @@ n = -10 -> "-0001 0000"
 // SOLUTION:
 
 const toBcd = function (number) {
-  const sign = Math.sign(number) === -1 ? "-" : "";
+  const sign = Math.sign(number) === -1 ? '-' : '';
 
   const numStr = sign ? String(number).slice(1) : String(number);
 
   return (
     sign +
     numStr
-      .split("")
+      .split('')
       .reduce((acc, el) => {
         const numEl = +el;
-        return [...acc, `${numEl.toString(2).padStart(4, "0")}`];
+        return [...acc, `${numEl.toString(2).padStart(4, '0')}`];
       }, [])
-      .join(" ")
+      .join(' ')
   );
 };

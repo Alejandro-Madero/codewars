@@ -22,7 +22,7 @@ const persistence = function (num) {
 
   const res = num
     .toString()
-    .split("")
+    .split('')
     .reduce((acc, el) => +el * acc, 1);
 
   return res < 10 ? 1 : 1 + persistence(res);

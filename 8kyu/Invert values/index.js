@@ -16,7 +16,7 @@ You can assume that all values are integers. Do not mutate the input array/list.
 // SOLUTION:
 
 const invert = function (array) {
-  return array.map((el) => (Math.sign(el) > 0 ? -el : Math.abs(el)));
+  return array.map(el => (Math.sign(el) > 0 ? -el : Math.abs(el)));
 };
 
 module.exports = invert;

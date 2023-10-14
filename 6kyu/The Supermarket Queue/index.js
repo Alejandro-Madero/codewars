@@ -40,7 +40,7 @@ N.B. You should assume that all the test input will be valid, as specified above
 
 const queueTime = function (customers, n) {
   const tills = Array.from({ length: n }, () => 0);
-  customers.forEach((c) => {
+  customers.forEach(c => {
     const minTill = Math.min(...tills);
     const minTillIdx = tills.indexOf(minTill);
     tills[minTillIdx] += c;

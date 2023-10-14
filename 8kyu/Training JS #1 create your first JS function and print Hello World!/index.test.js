@@ -1,10 +1,10 @@
-const helloWorld = require(".");
+const helloWorld = require('.');
 
-describe("helloWorld", () => {
+describe('helloWorld', () => {
   let consoleLogSpy;
 
   beforeEach(() => {
-    consoleLogSpy = jest.spyOn(console, "log");
+    consoleLogSpy = jest.spyOn(console, 'log');
   });
 
   afterEach(() => {
@@ -13,6 +13,6 @@ describe("helloWorld", () => {
 
   test('should print "Hello World!" to the console', () => {
     helloWorld();
-    expect(consoleLogSpy).toHaveBeenCalledWith("Hello World!");
+    expect(consoleLogSpy).toHaveBeenCalledWith('Hello World!');
   });
 });

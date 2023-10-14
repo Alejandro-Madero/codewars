@@ -19,6 +19,6 @@ Note: for this kata y isn't considered a vowel.
 
 // SOLUTION:
 
-const disemvowel = (str) => str.replace(/[aeiou]/gi, "");
+const disemvowel = str => str.replace(/[aeiou]/gi, '');
 
 module.exports = disemvowel;

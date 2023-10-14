@@ -54,8 +54,8 @@ const isPrime = function (n) {
 
 const oddPrime = function (n) {
   const arr = String(n)
-    .split("")
-    .map((el) => el % 2 === 0);
+    .split('')
+    .map(el => el % 2 === 0);
 
-  return arr.every((el) => el === false);
+  return arr.every(el => el === false);
 };

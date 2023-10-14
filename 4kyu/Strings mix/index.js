@@ -51,7 +51,7 @@ const mix = function (s1, s2) {
   const obj1 = {};
   const obj2 = {};
   const res = [];
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
   for (const char of s1) {
     if (char.match(/[a-z]/g)) {
@@ -68,21 +68,21 @@ const mix = function (s1, s2) {
   for (const char of alphabet) {
     if (obj1[char] && obj2[char]) {
       obj1[char] > obj2[char] && obj1[char] > 1
-        ? res.push({ char, str: "1", times: obj1[char] })
+        ? res.push({ char, str: '1', times: obj1[char] })
         : obj2[char] > obj1[char] && obj2[char] > 1
-        ? res.push({ char, str: "2", times: obj2[char] })
+        ? res.push({ char, str: '2', times: obj2[char] })
         : obj2[char] === obj1[char] && obj1[char] > 1
-        ? res.push({ char, str: "=", times: obj1[char] })
-        : "";
+        ? res.push({ char, str: '=', times: obj1[char] })
+        : '';
       continue;
     }
 
     if (obj1[char] > 1) {
-      res.push({ char, str: "1", times: obj1[char] });
+      res.push({ char, str: '1', times: obj1[char] });
     }
 
     if (obj2[char] > 1) {
-      res.push({ char, str: "2", times: obj2[char] });
+      res.push({ char, str: '2', times: obj2[char] });
     }
   }
 
@@ -95,8 +95,8 @@ const mix = function (s1, s2) {
       }
       return b.times - a.times;
     })
-    .map((el) => {
+    .map(el => {
       return `${el.str}:${el.char.repeat(el.times)}`;
     })
-    .join("/");
+    .join('/');
 };

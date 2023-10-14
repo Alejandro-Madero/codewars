@@ -51,7 +51,7 @@ should return:
 
 // SOLUTION:
 
-const draw = (deck) => {
+const draw = deck => {
   const deckCopy = deck.slice();
   const drawnCards = [];
 

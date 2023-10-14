@@ -1,4 +1,4 @@
-const DNAStrand = require(".");
+const DNAStrand = require('.');
 
 // "ATTGC" --> "TAACG"
 // "GTAT" --> "CATA"
@@ -11,17 +11,17 @@ const DNAStrand = require(".");
 //   const pairs = { A: "T", T: "A", C: "G", G: "C" };
 
 test("DNA strand 'ATTGC' should return 'TAACG' ", () => {
-  expect(DNAStrand("ATTGC")).toBe("TAACG");
+  expect(DNAStrand('ATTGC')).toBe('TAACG');
 });
 
 test("DNA strand 'GTAT' should return 'CATA' ", () => {
-  expect(DNAStrand("GTAT")).toBe("CATA");
+  expect(DNAStrand('GTAT')).toBe('CATA');
 });
 
 test("DNA strand 'AAACCG' should return 'TTTGGC' ", () => {
-  expect(DNAStrand("AAACCG")).toBe("TTTGGC");
+  expect(DNAStrand('AAACCG')).toBe('TTTGGC');
 });
 
 test("DNA strand 'ATTGC' should return 'TAACG' ", () => {
-  expect(DNAStrand("")).toBe("");
+  expect(DNAStrand('')).toBe('');
 });

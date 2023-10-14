@@ -17,6 +17,6 @@ For simplicity, you can treat the letter y as a consonant, not a vowel.
 // SOLUTION:
 
 const reverseVowels = function (str) {
-  const strVowels = str.replaceAll(/[^aeiou]/gi, "").split("");
+  const strVowels = str.replaceAll(/[^aeiou]/gi, '').split('');
   return str.replaceAll(/[aeiou]/gi, () => strVowels.pop());
 };

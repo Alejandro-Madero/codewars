@@ -26,7 +26,7 @@ const majority = function (arr) {
     charCount[char] ? charCount[char]++ : (charCount[char] = 1);
     if (charCount[char] > maxCount) maxCount = charCount[char];
   }
-  const res = Object.entries(charCount).filter((el) => el[1] === maxCount);
+  const res = Object.entries(charCount).filter(el => el[1] === maxCount);
 
   return res.length > 1 || res.length === 0 ? null : res[0][0];
 };

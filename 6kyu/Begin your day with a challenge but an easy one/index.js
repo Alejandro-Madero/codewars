@@ -28,7 +28,7 @@ function oneTwoThree(n) {
   const sum =
     n <= 9
       ? String(n)
-      : `${"9".repeat(Math.floor(n / 9))}${String(n % 9 || "")}`;
+      : `${'9'.repeat(Math.floor(n / 9))}${String(n % 9 || '')}`;
 
-  return [sum, "1".repeat(n) || "0"];
+  return [sum, '1'.repeat(n) || '0'];
 }

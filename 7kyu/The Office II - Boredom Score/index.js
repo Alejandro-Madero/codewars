@@ -42,13 +42,13 @@ const boredom = function (staff) {
     IS: 8,
     retail: 5,
     cleaning: 4,
-    "pissing about": 25,
+    'pissing about': 25,
   };
 
   const boredomCount = Object.values(staff).reduce(
     (acc, el) => (acc += department[el]),
     0
   );
-  if (boredomCount <= 80) return "kill me now";
-  return boredomCount < 100 ? "i can handle this" : "party time!!";
+  if (boredomCount <= 80) return 'kill me now';
+  return boredomCount < 100 ? 'i can handle this' : 'party time!!';
 };

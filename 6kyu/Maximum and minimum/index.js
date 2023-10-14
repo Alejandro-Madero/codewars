@@ -30,7 +30,7 @@ If one of the arguments can not be evaluated to a number, return NaN
 const max = function () {
   const args = Object.values(arguments)
     .flat(Infinity)
-    .map((el) => +el);
+    .map(el => +el);
   if (!args.length) return 0;
   args.sort((a, b) => b - a);
   return args.includes(NaN) ? NaN : args[0];
@@ -39,7 +39,7 @@ const max = function () {
 const min = function () {
   const args = Object.values(arguments)
     .flat(Infinity)
-    .map((el) => +el);
+    .map(el => +el);
   if (!args.length) return 0;
   args.sort((a, b) => a - b);
   return args.includes(NaN) ? NaN : args[0];

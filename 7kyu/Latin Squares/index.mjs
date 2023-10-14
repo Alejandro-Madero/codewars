@@ -24,7 +24,7 @@ Write a function that returns a latin square for any positive integer n.
 
 // SOLUTION:
 
-const makeLatinSquare = function (n) {
+export const makeLatinSquare = function (n) {
   const firstRow = Array.from({ length: n }, (_, i) => i + 1);
   const square = Array(n - 1).fill(null);
   const aver = square.map((_, rowI) => {
@@ -35,5 +35,3 @@ const makeLatinSquare = function (n) {
   });
   return [firstRow, ...aver];
 };
-
-module.exports = makeLatinSquare;

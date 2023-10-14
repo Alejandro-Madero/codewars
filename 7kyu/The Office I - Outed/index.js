@@ -24,5 +24,5 @@ const outed = function (meet, boss) {
       return el[0] === boss ? (acc += el[1] * 2) : (acc += el[1]);
     }, 0) / Object.keys(meet).length;
 
-  return average <= 5 ? "Get Out Now!" : "Nice Work Champ!";
+  return average <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 };

@@ -22,7 +22,7 @@ Examples
 // SOLUTION:
 
 const upArray = function (arr) {
-  if (!arr.length || arr.some((el) => el < 0 || el > 9)) return null;
+  if (!arr.length || arr.some(el => el < 0 || el > 9)) return null;
   const res = [];
   let owed = 0;
 

@@ -26,7 +26,7 @@ Error checking for text strings or other invalid inputs is not required, only va
 const narcissistic = function (value) {
   return (
     String(value)
-      .split("")
+      .split('')
       .reduce((acc, el, i, arr) => Number(el) ** arr.length + acc, 0) === value
   );
 };

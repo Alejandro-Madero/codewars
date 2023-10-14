@@ -34,15 +34,15 @@ consecutive strings : follow one after another without an interruption
 // SOLUTION:
 
 const longestConsec = function (strarr, k) {
-  if (k < 1 || k > strarr.length) return "";
+  if (k < 1 || k > strarr.length) return '';
 
   let max = 0;
-  let res = "";
+  let res = '';
 
   strarr.forEach((_, i, arr) => {
     let str = [...arr.slice(i, i + k)];
     if (str.length < k) return;
-    str = str.join("");
+    str = str.join('');
     if (str.length > max) {
       max = str.length;
       res = str;

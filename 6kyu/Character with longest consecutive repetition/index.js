@@ -25,7 +25,7 @@ const longestRepetition = function (s) {
   let curRep = 0;
   let curChar = s[0];
   let longestRep = 0;
-  let longestChar = "";
+  let longestChar = '';
 
   for (let i = 0; i < s.length; i++) {
     curRep += 1;

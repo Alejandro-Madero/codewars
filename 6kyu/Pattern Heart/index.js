@@ -32,15 +32,15 @@ const draw = function (n) {
   const sqLines = Math.floor(n / 6);
   const totalLines = n / 2 - 1 + sqLines + 2;
 
-  const sq = "■";
-  const tl = "◣";
-  const tr = "◢";
-  const le = "◥";
-  const re = "◤";
-  const sp = " ";
+  const sq = '■';
+  const tl = '◣';
+  const tr = '◢';
+  const le = '◥';
+  const re = '◤';
+  const sp = ' ';
 
   let squares = n;
-  let heart = "";
+  let heart = '';
 
   for (let i = 0; i < totalLines; i++) {
     if (i === 0)

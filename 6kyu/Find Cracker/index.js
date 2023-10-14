@@ -40,10 +40,10 @@ return ["name1", "name3"];
 
 const findHack = function (arr) {
   const scores = new Map([
-    ["A", 30],
-    ["B", 20],
-    ["C", 10],
-    ["D", 5],
+    ['A', 30],
+    ['B', 20],
+    ['C', 10],
+    ['D', 5],
   ]);
 
   return arr.reduce((acc, el) => {
@@ -53,7 +53,7 @@ const findHack = function (arr) {
     if (grades.length < 5) bonusScore = false;
 
     let realScore = grades.reduce((acc, el) => {
-      if (el !== "A" && el !== "B") bonusScore = false;
+      if (el !== 'A' && el !== 'B') bonusScore = false;
       return acc + (scores.get(el) || 0);
     }, 0);
 

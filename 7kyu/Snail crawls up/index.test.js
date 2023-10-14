@@ -1,1 +1,1 @@
-const snail = require(".");
+const snail = require('.');

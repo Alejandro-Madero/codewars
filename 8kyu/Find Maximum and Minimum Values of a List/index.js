@@ -20,7 +20,7 @@ You may consider that there will not be any empty arrays/vectors.
 
 // SOLUTION:
 
-const min = (list) => Math.min(...list);
-const max = (list) => Math.max(...list);
+const min = list => Math.min(...list);
+const max = list => Math.max(...list);
 
 module.exports = { min, max };

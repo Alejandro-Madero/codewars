@@ -11,6 +11,6 @@ Make a function that will return a greeting statement that uses an input; your p
 
 // SOLUTION
 
-const greet = (name) => `Hello ${name} how are you doing today?`;
+const greet = name => `Hello ${name} how are you doing today?`;
 
 module.exports = greet;

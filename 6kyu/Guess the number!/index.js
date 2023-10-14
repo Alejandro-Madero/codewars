@@ -29,13 +29,13 @@ Guesser.prototype.getNumber = function () {
   let mid = Math.floor((min + max) / 2);
   let guess = this.guess(mid);
 
-  while (guess !== "Correct!") {
-    if (guess === "Too low!") {
+  while (guess !== 'Correct!') {
+    if (guess === 'Too low!') {
       min = mid + 1;
       mid = Math.floor((min + max) / 2);
       guess = this.guess(mid);
     }
-    if (guess === "Too high!") {
+    if (guess === 'Too high!') {
       max = mid - 1;
       mid = Math.floor((min + max) / 2);
       guess = this.guess(mid);

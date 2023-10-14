@@ -17,5 +17,4 @@ No whitespaces / underscore
 
 // SOLUTION:
 
-const alphanumeric = (string) =>
-  !string ? false : !/[^a-z0-9]/gi.test(string);
+const alphanumeric = string => (!string ? false : !/[^a-z0-9]/gi.test(string));

@@ -18,7 +18,7 @@ Example
 
 const solution = function (str) {
   return str
-    .split("")
-    .map((c) => (c.match(/[A-Z]/) ? ` ${c}` : c))
-    .join("");
+    .split('')
+    .map(c => (c.match(/[A-Z]/) ? ` ${c}` : c))
+    .join('');
 };

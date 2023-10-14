@@ -34,13 +34,13 @@ const towerBuilder = function (nFloors) {
   const maxLen = nFloors * 2 - 1;
 
   return Array(nFloors)
-    .fill("")
+    .fill('')
     .reduce((acc, el, i, arr) => {
       const starsCount = !i ? 1 : i * 2 + 1;
       const padding = (maxLen - starsCount) / 2;
       return [
         ...acc,
-        `${" ".repeat(padding)}${"*".repeat(starsCount)}${" ".repeat(padding)}`,
+        `${' '.repeat(padding)}${'*'.repeat(starsCount)}${' '.repeat(padding)}`,
       ];
     }, []);
 };

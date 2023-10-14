@@ -50,7 +50,7 @@ Of course, in real Zonk game it's sometimes not worth to collect all combination
 const getScore = function (dice) {
   const diceRoll = new Map();
 
-  dice.forEach((roll) =>
+  dice.forEach(roll =>
     diceRoll.has(roll)
       ? diceRoll.set(roll, diceRoll.get(roll) + 1)
       : diceRoll.set(roll, 1)
@@ -58,7 +58,7 @@ const getScore = function (dice) {
 
   if (diceRoll.size === 6) return 1000;
   if (diceRoll.size === 3) {
-    return [...diceRoll].every((el) => el[1] === 2) ? 750 : count(diceRoll);
+    return [...diceRoll].every(el => el[1] === 2) ? 750 : count(diceRoll);
   }
 
   return count(diceRoll);
@@ -80,6 +80,6 @@ const count = function (diceRoll) {
         if (el[1] === 2) return acc + combinations[el[0]][0] * 2;
       }
       return (combinations[el[0]][el[1] - 1] || 0) + acc;
-    }, 0) || "Zonk"
+    }, 0) || 'Zonk'
   );
 };

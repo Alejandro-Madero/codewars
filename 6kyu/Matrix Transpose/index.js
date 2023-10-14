@@ -26,7 +26,7 @@ const transpose = function (matrix) {
   const transpose = [];
 
   for (let i = 0; i < matrix[0].length; i++) {
-    const arr = matrix.map((el) => el[i]);
+    const arr = matrix.map(el => el[i]);
     transpose.push(arr);
   }
 

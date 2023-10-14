@@ -14,10 +14,10 @@ Please remember that a pawn attack(and defend as well) only the 2 square on the 
 // SOLUTION:
 
 const coveredPawns = function (pawns) {
-  const cols = ["a", "b", "c", "d", "e", "f", "g", "h"];
+  const cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
   let coveredPawns = 0;
 
-  pawns.forEach((pawn) => {
+  pawns.forEach(pawn => {
     const pawnGuard1 = `${cols[cols.indexOf(pawn[0]) - 1]}${pawn[1] - 1}`;
     const pawnGuard2 = `${cols[cols.indexOf(pawn[0]) + 1]}${pawn[1] - 1}`;
 

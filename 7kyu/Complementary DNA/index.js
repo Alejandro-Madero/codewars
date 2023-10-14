@@ -23,11 +23,11 @@ Example: (input --> output)
 // SOLUTION:
 
 const DNAStrand = function (dna) {
-  const pairs = { A: "T", T: "A", C: "G", G: "C" };
+  const pairs = { A: 'T', T: 'A', C: 'G', G: 'C' };
   return dna
-    .split("")
-    .map((el) => pairs[el])
-    .join("");
+    .split('')
+    .map(el => pairs[el])
+    .join('');
 };
 
 module.exports = DNAStrand;

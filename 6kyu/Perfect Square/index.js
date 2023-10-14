@@ -34,8 +34,8 @@ notPerfect = "..,\n..\n...";
 // SOLUTION:
 
 const perfectSquare = function (string) {
-  const arr = string.split("\n");
-  const isSquare = arr.every((el) => {
+  const arr = string.split('\n');
+  const isSquare = arr.every(el => {
     return el.length === arr.length && el.match(/[^.]/g) === null;
   });
 

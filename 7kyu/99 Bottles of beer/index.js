@@ -51,17 +51,17 @@ Example
 // SOLUTION:
 
 const sing = function () {
-  const firstLine = ["of beer on the wall,", "of beer."];
+  const firstLine = ['of beer on the wall,', 'of beer.'];
   const secondLine = [
-    "Take one down and pass it around,",
-    "of beer on the wall.",
+    'Take one down and pass it around,',
+    'of beer on the wall.',
   ];
-  const error = "Go to the store and buy some more, 99";
+  const error = 'Go to the store and buy some more, 99';
 
   return Array.from({ length: 100 }, (_, i) => {
-    const bottles = ["No more bottles", "bottle", "bottles"];
-    const bottle = bottles[i] ?? "bottles";
-    const minusOne = bottles[i - 1] ?? "bottles";
+    const bottles = ['No more bottles', 'bottle', 'bottles'];
+    const bottle = bottles[i] ?? 'bottles';
+    const minusOne = bottles[i - 1] ?? 'bottles';
     if (i === 0)
       return [
         `${bottle} ${firstLine[0]} ${bottle.toLowerCase()} ${firstLine[1]}`,
@@ -70,7 +70,7 @@ const sing = function () {
     return [
       `${i} ${bottle} ${firstLine[0]} ${i} ${bottle} ${firstLine[1]}`,
       `${secondLine[0]} ${
-        i - 1 > 0 ? `${i - 1} ` : ""
+        i - 1 > 0 ? `${i - 1} ` : ''
       }${minusOne.toLowerCase()} ${secondLine[1]}`,
     ];
   })

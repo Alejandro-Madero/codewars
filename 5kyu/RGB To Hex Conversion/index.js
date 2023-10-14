@@ -22,12 +22,12 @@ rgb(148, 0, 211) // returns 9400D3
 
 const rgb = function (r, g, b) {
   const hex = [r, g, b]
-    .map((el) => {
+    .map(el => {
       if (el < 0) el = 0;
       if (el > 255) el = 255;
       return el.toString(16).padStart(2, 0);
     })
-    .join("")
+    .join('')
     .toUpperCase();
 
   return hex;

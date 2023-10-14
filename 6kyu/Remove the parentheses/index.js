@@ -25,15 +25,15 @@ The parentheses can be nested.
 const removeParentheses = function (s) {
   let isOpen = false;
   let openBrackets = 0;
-  let res = "";
+  let res = '';
 
   for (const char of s) {
-    if (char === "(") {
+    if (char === '(') {
       isOpen = true;
       openBrackets += 1;
       continue;
     }
-    if (char === ")" && isOpen) {
+    if (char === ')' && isOpen) {
       openBrackets -= 1;
       isOpen = openBrackets === 0 ? false : true;
       continue;

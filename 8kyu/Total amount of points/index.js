@@ -30,7 +30,7 @@ our team always plays 10 matches in the championship
 
 const points = function (games) {
   return games.reduce((acc, el) => {
-    const [x, y] = el.split(":");
+    const [x, y] = el.split(':');
     if (x > y) return acc + 3;
     if (x < y) return acc;
     return acc + 1;

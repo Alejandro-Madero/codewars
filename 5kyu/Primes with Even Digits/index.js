@@ -50,7 +50,7 @@ const isPrime = function (n) {
   return [
     n,
     String(n)
-      .split("")
+      .split('')
       .reduce((acc, el) => {
         if (+el % 2 === 0) return (acc += 1);
         return acc;

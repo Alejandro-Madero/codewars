@@ -34,7 +34,7 @@ isSquare  26  // => false
 
 // SOLUTION:
 
-const isSquare = (n) => {
+const isSquare = n => {
   if (n < 0) return false;
   return String(Math.sqrt(n)).match(/[.]/g) ? false : true;
 };

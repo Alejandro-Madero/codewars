@@ -22,9 +22,9 @@ const findUniq = function (arr) {
   const uniqueStr = new Map();
 
   for (const str of arr) {
-    const sorted = str.toLowerCase().replaceAll(" ", "").split("").sort();
-    let uniqueChars = "";
-    sorted.forEach((c) =>
+    const sorted = str.toLowerCase().replaceAll(' ', '').split('').sort();
+    let uniqueChars = '';
+    sorted.forEach(c =>
       uniqueChars.indexOf(c) < 0 ? (uniqueChars += c) : uniqueChars
     );
 

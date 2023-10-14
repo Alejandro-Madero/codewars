@@ -16,7 +16,7 @@ For example if passed "Hannah" it should return 6 and if passed "aabbcc_yYx_" it
 // SOLUTION:
 
 const longestPalindrome = function (s) {
-  s = s.replace(/[^a-z0-9]/g, "");
+  s = s.replace(/[^a-z0-9]/g, '');
 
   const charCount = {};
   let oddChar = false;

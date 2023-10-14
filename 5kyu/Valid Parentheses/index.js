@@ -21,7 +21,7 @@ Constraints
 
 const validParentheses = function (parens) {
   const cache = [];
-  const closing = new Map([[")", "("]]);
+  const closing = new Map([[')', '(']]);
 
   for (const symbol of parens) {
     if (!closing.has(symbol)) {

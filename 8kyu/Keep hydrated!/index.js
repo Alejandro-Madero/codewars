@@ -24,6 +24,6 @@ time = 11.8--> litres = 5
 
 // SOLUTION:
 
-const litres = (time) => Math.floor(time * 0.5);
+const litres = time => Math.floor(time * 0.5);
 
 module.exports = litres;

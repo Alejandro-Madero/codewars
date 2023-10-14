@@ -17,11 +17,11 @@ For instance:
 // SOLUTION:
 
 String.prototype.camelCase = function () {
-  return this.split(" ")
+  return this.split(' ')
     .reduce((str, subStr, i) => {
       if (!subStr) return [...str];
       const camelStr = `${subStr[0].toUpperCase()}${subStr.slice(1)}`;
       return [...str, camelStr];
     }, [])
-    .join("");
+    .join('');
 };

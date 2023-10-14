@@ -94,17 +94,17 @@ const isValid = function (square, gap) {
       if (!magicSum) magicSum = sum;
       return magicSum === sum;
     })
-    .every((row) => row === true);
+    .every(row => row === true);
 
   if (!rowsOk) return false;
 
   const colsOk = cols
-    .map((col) => checkSum(col) === magicSum)
-    .every((col) => col === true);
+    .map(col => checkSum(col) === magicSum)
+    .every(col => col === true);
 
   const diagsOk = diags
-    .map((diag) => checkSum(diag) === magicSum)
-    .every((diag) => diag === true);
+    .map(diag => checkSum(diag) === magicSum)
+    .every(diag => diag === true);
   if (!colsOk || !diagsOk) return false;
 
   const sortedValues = allValues.sort((a, b) => a - b);
@@ -112,9 +112,9 @@ const isValid = function (square, gap) {
   const isGapOk = !sortedValues
     .map((val, i, arr) => arr[i + 1] - val)
     .slice(0, -1)
-    .some((val) => val !== gap);
+    .some(val => val !== gap);
 
   return isGapOk;
 };
 
-const checkSum = (arr) => arr.reduce((acc, el) => acc + el, 0);
+const checkSum = arr => arr.reduce((acc, el) => acc + el, 0);

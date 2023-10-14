@@ -28,12 +28,12 @@ const generateHashtag = function (str) {
 
   const res = str
     .trim()
-    .split(" ")
-    .map((el) => {
+    .split(' ')
+    .map(el => {
       if (!el) return;
       res += `${el[0].toUpperCase()}${el.slice(1).toLowerCase()}`;
     })
-    .join("");
+    .join('');
 
   if (!res || res.length > 139) return false;
 

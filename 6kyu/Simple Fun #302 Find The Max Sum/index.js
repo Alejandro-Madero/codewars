@@ -85,13 +85,13 @@ const findMaxSum = function (n) {
     );
 
     const a1 = threeMultiple
-      .map((el) => fiveMultiple - el)
+      .map(el => fiveMultiple - el)
       .map((a1, i) => {
         const a2 = threeMultiple[i] / 2;
         if (a2 < n || (a2 + a1) % 2 === 0) return true;
         return false;
       })
-      .some((el) => el === true);
+      .some(el => el === true);
 
     a1 ? (maxSum = fiveMultiple) : (firstFiveMultiple = fiveMultiple - 5);
   }

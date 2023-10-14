@@ -23,8 +23,8 @@ wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 // SOLUTION:
 
 const wave = function (str) {
-  return str.split("").reduce((acc, el, i) => {
-    return el === " "
+  return str.split('').reduce((acc, el, i) => {
+    return el === ' '
       ? acc
       : [...acc, `${str.slice(0, i)}${el.toUpperCase()}${str.slice(i + 1)}`];
   }, []);

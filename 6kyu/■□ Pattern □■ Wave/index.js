@@ -55,9 +55,9 @@ draw([1,0,1,0,1,0,1,0])
 
 const draw = function (waves) {
   const height = Math.max(...waves);
-  let str = "";
+  let str = '';
   for (let i = height; i > 0; i--) {
-    str += `${waves.map((el) => (el >= i ? "■" : "□")).join("")}\n`;
+    str += `${waves.map(el => (el >= i ? '■' : '□')).join('')}\n`;
   }
 
   return str.slice(0, -1);

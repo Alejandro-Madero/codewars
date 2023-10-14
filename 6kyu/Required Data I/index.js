@@ -49,8 +49,8 @@ const countSel = function (lst) {
   const data = Object.entries(items);
   const unique = data.length;
   const max = Math.max(...Object.values(items));
-  const once = data.filter((el) => el[1] === 1).length;
-  const maxValues = data.filter((el) => el[1] === max).map((el) => +el[0]);
+  const once = data.filter(el => el[1] === 1).length;
+  const maxValues = data.filter(el => el[1] === max).map(el => +el[0]);
 
   return [lst.length, unique, once, [maxValues.sort((a, b) => a - b), max]];
 };

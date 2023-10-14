@@ -46,13 +46,13 @@ const findLowestInt = function (k) {
 
   for (let i = 3; lowestInt === null; i += 3) {
     const k3 = String(k1 * i)
-      .split("")
+      .split('')
       .sort((a, b) => a - b)
-      .join("");
+      .join('');
     const k4 = String(k2 * i)
-      .split("")
+      .split('')
       .sort((a, b) => a - b)
-      .join("");
+      .join('');
     if (k3 === k4) lowestInt = i;
   }
   return lowestInt;
